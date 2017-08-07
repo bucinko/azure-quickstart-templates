@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "GEN-USER"
+      "value": "sysadmin"
     },
     "adminPassword": {
       "value": "GEN-PASSWORD"
     },
     "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
+      "value": "bucinkocloud"
     }
   }
 }
