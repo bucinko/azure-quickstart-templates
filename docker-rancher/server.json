@@ -295,12 +295,7 @@
             "sku": "[variables('ubuntuOSVersion')]",
             "version": "latest"
           },
-          "osDisk": {
-			"name": "[concat(parameters('rancherNodeName'),'-osdisk')]",
-            "vhd": {
-              "uri": "[concat('http://',variables('storageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',parameters('rancherNodeName'),'-osdisk','.vhd')]"
-            },
-            "caching": "ReadWrite",
+            "osDisk": {
             "createOption": "FromImage"
           }
         },
