@@ -295,9 +295,11 @@
             "sku": "[variables('ubuntuOSVersion')]",
             "version": "latest"
           },
-            "osDisk": {
-            "createOption": "FromImage"
-          }
+          "osDisk": { 
+          "name": "[concat('myOSDisk', copyindex())]",
+          "caching": "ReadWrite", 
+          "createOption": "FromImage" 
+        } 
         },
         "networkProfile": {
           "networkInterfaces": [
